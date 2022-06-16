@@ -35,7 +35,7 @@ public class Launcher {
 		ListNode first = new ListNode(0);
 		ListNode h = first;
 		while (true) {
-			//bubble sort style speedup bool to break worst case 
+			//bubble sort style speedup bool to break worst case instead of traversing array trivially 
 			boolean speedupBreak = true;
 			int min = Integer.MAX_VALUE;
 			for (int i = 0; i < lists.length; i++) {
