@@ -1,25 +1,49 @@
 package revature;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
+
 import revature.ListNode;
 
 public class Launcher {
 
 	public static void main(String[] args) {
-		double deRivedmedian;
+		System.out.println("Elementary, my Dear Watson! There are: " + Squares(3,9) +" Square Ints!");
+		System.out.println("Elementary, my Dear Watson! There are: " + Squares(17,24) +" Square Ints!");
+		System.out.println("Elementary, my Dear Watson! There are: " + Squares(1,1000000000) +" Square Ints!");
+	}
+	
+	public static int Squares(int min, int max) {
+		
+		return (int) (Math.floor(Math.sqrt(max)) - Math.ceil(Math.sqrt(min)) +1);
+	}
+}
 
-		int[] nums1 = { 1, 2 };
-		int[] nums2 = { 3, 4 };
-		int m = nums1.length;
-		int n = nums2.length;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//	double deRivedmedian;
+
+		//int[] nums1 = { 1, 2 };
+	//	int[] nums2 = { 3, 4 };
+		//int m = nums1.length;
+		//int n = nums2.length;
 		// for speed purposes block functions won't waste any memory
-		int[] combinedNums = Arrays.copyOf(nums1, m + n);
-		System.arraycopy(nums2, 0, combinedNums, m, n);
-		Arrays.sort(combinedNums);
+	//	int[] combinedNums = Arrays.copyOf(nums1, m + n);
+	//	System.arraycopy(nums2, 0, combinedNums, m, n);
+	//	Arrays.sort(combinedNums);
 
 		// even vs odd -- this will work for any arrays introduced as nums1 x nums2
-		if (combinedNums.length % 2 == 0) {
+		/*if (combinedNums.length % 2 == 0) {
 			deRivedmedian = ((double) combinedNums[combinedNums.length / 2]
 					+ (double) combinedNums[combinedNums.length / 2 - 1]) / 2;
 		} else {
@@ -61,8 +85,8 @@ public class Launcher {
 		return first.next;
 	}
 
+*/	
 	
-	}
 
 	
 
